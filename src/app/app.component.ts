@@ -17,6 +17,8 @@ export class AppComponent {
     avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HZr81YPvJJ02lxszyYDmiYSeZ9FT7qfMHA&usqp=CAU'
   }
 
+  nombres: string[] = ['juan', 'julio', 'wander']
+
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }

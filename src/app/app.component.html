@@ -1,3 +1,23 @@
+<!-- ESTRUCTURAS DE CONTROL -->
+<input type="text" required [(ngModel)]="person.name">
+<h1>*ng FOR</h1>
+<p *ngIf="person.name == 'juan'">Soy juan</p>
+<p *ngIf="person.name == 'julian' && person.age === 18; else myBlock">Soy julian</p>
+<ng-template #myBlock>
+  <p>Bloque else</p>
+</ng-template>
+<hr />
+
+
+<input type="text" required [(ngModel)]="person.name">
+<h1>*nIF</h1>
+<p *ngIf="person.name == 'juan'">Soy juan</p>
+<p *ngIf="person.name == 'julian' && person.age === 18; else myBlock">Soy julian</p>
+<ng-template #myBlock>
+  <p>Bloque else</p>
+</ng-template>
+<hr />
+
 <h1>NGMODEL</h1>
 <p>Nombre: {{ person.name }}</p>
 <input type="text" required #nameInput="ngModel" [(ngModel)]="person.name">
